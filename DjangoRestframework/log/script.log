@@ -1,0 +1,654 @@
+WARNING 2023-06-27 14:48:18,193 [Thread-1:24512] [django.request:241] [log:log_response] [WARNING]- Not Found: /
+WARNING 2023-06-27 14:48:18,378 [Thread-1:24512] [django.request:241] [log:log_response] [WARNING]- Not Found: /favicon.ico
+ERROR 2023-06-27 15:05:24,822 [Thread-3:20564] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/filter/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 282, in post
+    temp = int(request.data.get('inputMeanOrMedianSize'))
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2023-06-27 15:05:36,223 [Thread-4:1556] [django.request:241] [log:log_response] [WARNING]- Not Found: /
+ERROR 2023-06-27 16:06:52,001 [Thread-5:11792] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/addGaussian/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 210, in post
+    dict['mean'] = float(request.data.get('inputMean'))
+ValueError: could not convert string to float: ''
+ERROR 2023-06-28 19:51:25,199 [Thread-17:27332] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/highFilter/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 353, in post
+    dict['inputThreshold'] = int(request.data.get('inputHighThreshold'))
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2023-06-28 21:21:33,429 [Thread-1:28456] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 147, in post
+    opera('crop', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "<string>", line 1, in <module>
+NameError: name 'crop' is not defined
+ERROR 2023-06-28 21:27:16,190 [Thread-1:27536] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 145, in post
+    dict['x'] = int(request.data.get('w'))
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2023-06-28 21:30:56,764 [Thread-4:24632] [django.request:241] [log:log_response] [WARNING]- Not Found: /
+ERROR 2023-06-28 21:42:06,507 [Thread-1:23696] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 147, in post
+    opera('crop', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "<string>", line 1, in <module>
+NameError: name 'crop' is not defined
+ERROR 2023-06-28 21:47:19,215 [Thread-1:30332] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 147, in post
+    opera('crop_image', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+TypeError: crop_image() got an unexpected keyword argument 'x'
+ERROR 2023-06-28 21:52:16,086 [Thread-1:30332] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/resize/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 63, in post
+    imageResize(zoomXValue, zoomYValue, path)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 104, in imageResize
+    out = cv2.resize(img, None, fx=x, fy=y, interpolation=cv2.INTER_LINEAR)
+cv2.error: OpenCV(4.7.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\resize.cpp:4062: error: (-215:Assertion failed) !ssize.empty() in function 'cv::resize'
+
+ERROR 2023-06-28 22:20:49,331 [Thread-5:26032] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 147, in post
+    opera('crop_image', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+TypeError: crop_image() got an unexpected keyword argument 'x'
+ERROR 2023-06-28 22:28:08,724 [Thread-5:26032] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 147, in post
+    opera('crop_image', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+TypeError: crop_image() got an unexpected keyword argument 'x'
+ERROR 2023-06-28 22:36:07,628 [Thread-1:18072] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/crop/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 158, in post
+    imageResize(w, h, path)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 104, in imageResize
+    out = cv2.resize(img, None, fx=x, fy=y, interpolation=cv2.INTER_LINEAR)
+cv2.error: OpenCV(4.7.0) D:\a\opencv-python\opencv-python\opencv\modules\core\src\alloc.cpp:73: error: (-4:Insufficient memory) Failed to allocate 124416000000 bytes in function 'cv::OutOfMemoryError'
+
+ERROR 2023-06-29 10:32:37,894 [Thread-1:13128] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/filter/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 308, in post
+    temp = int(request.data.get('inputMeanOrMedianSize'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR 2023-06-29 15:29:23,169 [Thread-1:24188] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/gray/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 136, in post
+    opera('gray', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 140, in gray
+    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x981fb336::Set<1,-1,-1>,struct cv::impl::A0x981fb336::Set<0,2,5>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+ERROR 2023-06-29 15:30:55,764 [Thread-1:24188] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/gray/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 136, in post
+    opera('gray', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 140, in gray
+    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x981fb336::Set<1,-1,-1>,struct cv::impl::A0x981fb336::Set<0,2,5>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+ERROR 2023-06-29 16:01:54,697 [Thread-2:2668] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/new_/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 49, in post
+    serializer, path = getISP(request)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 14, in getISP
+    images = Image.objects.get(id=request.data.get('id'))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Image.DoesNotExist: Image matching query does not exist.
+ERROR 2023-06-29 16:01:54,809 [Thread-2:2668] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/getHistArray/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 59, in post
+    serializer, path = getISP(request)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 14, in getISP
+    images = Image.objects.get(id=request.data.get('id'))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Image.DoesNotExist: Image matching query does not exist.
+ERROR 2023-06-29 21:57:57,522 [Thread-3:32676] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/Seg/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 362, in post
+    opera('gudingOradaptive', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+TypeError: gudingOradaptive() got an unexpected keyword argument 'ValueOfgudingOradaptive'
+ERROR 2023-06-29 22:08:22,549 [Thread-3:12108] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/Seg/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 362, in post
+    opera('gudingOradaptive', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 783, in gudingOradaptive
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x981fb336::Set<1,-1,-1>,struct cv::impl::A0x981fb336::Set<0,2,5>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+ERROR 2023-06-30 09:15:07,949 [Thread-1:33768] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/addBorder/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 413, in post
+    opera('add_border', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+TypeError: add_border() got an unexpected keyword argument 'fillcolor'
+ERROR 2023-06-30 10:44:16,241 [Thread-3:30204] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/bcsadjust/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 414, in post
+    opera('bcs_adjust', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 935, in bcs_adjust
+    hsv_image = cv2.cvtColor(adjusted_image, cv2.COLOR_BGR2HSV)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x416a7d27::Set<3,-1,-1>,struct cv::impl::A0x416a7d27::Set<0,5,-1>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+ERROR 2023-06-30 10:44:45,341 [Thread-3:30204] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/hsvadjust/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 427, in post
+    opera('hsv_adjust', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 961, in hsv_adjust
+    hsv_img[:, :, 0] = h + hsvimg[:, :, 0]  # 0-360
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'float'
+ERROR 2023-06-30 10:45:06,302 [Thread-3:30204] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/hsvadjust/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 427, in post
+    opera('hsv_adjust', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 961, in hsv_adjust
+    hsv_img[:, :, 0] = h + hsvimg[:, :, 0]  # 0-360
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'float'
+ERROR 2023-06-30 10:46:50,861 [Thread-3:30204] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/hsvadjust/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 427, in post
+    opera('hsv_adjust', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 961, in hsv_adjust
+    hsv_img[:, :, 0] = h + hsvimg[:, :, 0]  # 0-360
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'float'
+ERROR 2023-06-30 10:48:12,867 [Thread-3:8976] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/hsvadjust/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 427, in post
+    opera('hsv_adjust', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 964, in hsv_adjust
+    hsv_img[:, :, 1] = (1.0 + s / 100) * hsvimg[:, :, 1]  # 0-1
+TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'
+ERROR 2023-06-30 21:20:19,558 [Thread-3:27932] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/gray/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 136, in post
+    opera('gray', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 194, in gray
+    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x981fb336::Set<1,-1,-1>,struct cv::impl::A0x981fb336::Set<0,2,5>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
+ERROR 2023-06-30 21:21:22,129 [Thread-3:27932] [django.request:241] [log:log_response] [ERROR]- Internal Server Error: /api/gray/
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\ProgramData\Anaconda3\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\api\views.py", line 136, in post
+    opera('gray', dict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 85, in opera
+    out = eval(op)(img, **paradict)
+  File "D:\Users\86135\PycharmProjects\ImageProcess-main\DjangoRestframework\lib\manage\imageProcess.py", line 194, in gray
+    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.7.0) d:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.simd_helpers.hpp:92: error: (-2:Unspecified error) in function '__cdecl cv::impl::`anonymous-namespace'::CvtHelper<struct cv::impl::`anonymous namespace'::Set<3,4,-1>,struct cv::impl::A0x981fb336::Set<1,-1,-1>,struct cv::impl::A0x981fb336::Set<0,2,5>,2>::CvtHelper(const class cv::_InputArray &,const class cv::_OutputArray &,int)'
+> Invalid number of channels in input image:
+>     'VScn::contains(scn)'
+> where
+>     'scn' is 1
+
